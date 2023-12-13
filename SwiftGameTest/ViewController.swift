@@ -64,12 +64,12 @@ class ViewController: UIViewController {
             
             characterImageViews.forEach{view in view.image = nil}
             
-        if let imageView = characterImageViews.randomElement()
-        {
-            imageView.image = UIImage(named: "CharacterDemoImage")
-        }
-        try? await Task.sleep(nanoseconds: 5 * 1000000000)
-        updateCharacterPosition()
+            if let imageView = characterImageViews.randomElement()
+            {
+                imageView.image = UIImage(named: "CharacterDemoImage")
+            }
+            try? await Task.sleep(nanoseconds: 5 * 1000000000)
+            updateCharacterPosition()
         }
     }
     
